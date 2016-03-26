@@ -1,0 +1,9 @@
+version: "2"
+services:
+ neo4j:
+  container_name: "neo4j-knowledge"
+  image: neo4j
+  volumes:
+   - ${HOME}/neo4j/data:/data
+  ports:
+   - 7474:7474
